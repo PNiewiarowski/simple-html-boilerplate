@@ -8,12 +8,16 @@ module.exports = {
     target: process.env.NODE_ENV === "production" ? "browserslist" : "web",
     entry: "./src/index.js",
     output: {
-        filename: "index.js",
+        filename: "index.[contenthash].js",
         path: path.resolve(__dirname, "dist"),
         assetModuleFilename: "assets/[hash][ext][query]"
     },
     module: {
         rules: [
+            {
+                test: /\.html$/i,
+                loader: 'html-loader',
+            },
             {
                 test: /\.(jpe?g|png|gif|svg)$/i,
                 type: "asset/resource",
@@ -53,6 +57,7 @@ module.exports = {
     devtool: "source-map",
     devServer: {
         contentBase: "./dist/",
-        hot: true
-    }
+        open: true,
+        port: 7070,
+    },
 }
