@@ -1,14 +1,16 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
     mode: process.env.NODE_ENV === "production" ? "production" : "development",
     target: process.env.NODE_ENV === "production" ? "browserslist" : "web",
-    entry: './src/index.js',
+    entry: "./src/index.js",
     output: {
-        filename: 'index.js',
-        path: path.resolve(__dirname, 'dist'),
-        assetModuleFilename: 'assets/[hash][ext][query]'
+        filename: "index.js",
+        path: path.resolve(__dirname, "dist"),
+        assetModuleFilename: "assets/[hash][ext][query]"
     },
     module: {
         rules: [
@@ -40,8 +42,12 @@ module.exports = {
         ],
     },
     plugins: [
+        new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: "index.css",
+        }),
+        new HtmlWebpackPlugin({
+            template: "./src/index.html",
         }),
     ],
     devtool: "source-map",
