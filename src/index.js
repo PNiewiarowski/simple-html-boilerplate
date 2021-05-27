@@ -1,8 +1,5 @@
+import Tools from "./app/Tools";
+import tools from "./assets/mocks/tools.json";
 import "./index.scss";
 
-const info = {
-    author: "PNiewiarowski",
-    name: "simple-html-boilerplate",
-};
-
-console.log(info);
+new Tools("[data-tools]", tools);

@@ -1,0 +1,27 @@
+[
+  {
+    "id": 0,
+    "name": "webpack",
+    "documentation": "https://webpack.js.org/concepts/"
+  },
+  {
+    "id": 1,
+    "name": "babel",
+    "documentation": "https://babeljs.io/docs/en/"
+  },
+  {
+    "id": 2,
+    "name": "jest",
+    "documentation": "https://jestjs.io/docs/getting-started"
+  },
+  {
+    "id": 3,
+    "name": "sass",
+    "documentation": "https://sass-lang.com/documentation"
+  },
+  {
+    "id": 4,
+    "name": "eslint",
+    "documentation": "https://eslint.org/"
+  }
+]

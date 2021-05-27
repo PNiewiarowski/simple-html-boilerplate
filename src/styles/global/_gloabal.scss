@@ -1,15 +1,22 @@
-@use "variables";
-
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 :root {
-  font-size: 10px;
+  font-size: 6px;
+
+  @media screen and (min-width: 1080px) {
+    font-size: 10px;
+  }
+
+  @media screen and (min-width: 2160px) {
+    font-size: 14px;
+  }
 }
 
 body {

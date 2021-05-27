@@ -1,2 +1,8 @@
-@use "styles/gloabal";
-@use "styles/doc";
+@use "styles/variables/variables";
+
+@use "styles/global/gloabal";
+
+@use "styles/elements/documentation";
+@use "styles/elements/tools";
+@use "styles/elements/button";
+@use "styles/elements/others";

@@ -1,0 +1,21 @@
+.tools {
+  margin-bottom: 2.5rem;
+
+  &__item {
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    background-color: var(--background-main-color);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0px 4px 0px 0px #000000aa;
+
+    font-size: 2rem;
+  }
+
+  &__documentation {
+    color: var(--accent-main-color);
+  }
+}
