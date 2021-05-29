@@ -1,11 +1,9 @@
 ﻿# simple-html-boilerplate
+
 Simple HTML boilerplate for simple project.
 
-# Run development server
->npm run start
+# Usage
 
-# Build project
->npm run build
-
-# Run unit test
->npm run test
+* `npm run start` to run development server.
+* `npm run build` to build project in production mode.
+* `npm run test` to run unit tests.
