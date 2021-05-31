@@ -2,10 +2,12 @@
   "private": true,
   "scripts": {
     "start": "cross-env webpack serve",
-    "watch": "webpack --watch",
     "build": "cross-env NODE_ENV=production webpack",
     "build-dev": "webpack",
-    "test": "jest"
+    "build-watch": "webpack --watch",
+    "test": "jest",
+    "test-watch": "jest --watch",
+    "test-coverage": "jest --coverage"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",
