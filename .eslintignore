@@ -1,4 +1,4 @@
 babel.config.js
 postcss.config.js
 webpack.config.js
-src/__tests__/
+src/tests/
