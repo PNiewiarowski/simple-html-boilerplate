@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: "RobotoMono";
 }
 
 :root {
@@ -22,5 +23,4 @@
 body {
   background-color: var(--background-main-color);
   color: var(--foreground-main-color);
-  font-size: 2rem;
 }

@@ -1,5 +1,11 @@
+@font-face {
+  font-family: "RobotoMono";
+  src: url("./assets/fonts/RobotoMono-Regular.ttf");
+}
+
 :root {
   --background-main-color: #333333;
   --foreground-main-color: #EEEEEE;
   --accent-main-color: #E67E22;
+  --main-font-family: "RobotoMono";
 }
