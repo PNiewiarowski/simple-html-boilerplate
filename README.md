@@ -1,6 +1,6 @@
-﻿# simple-html-boilerplate
+# simple-html-boilerplate
 
-Simple HTML boilerplate for simple project.
+Simple HTML boilerplate for a simple project. Includes webpack, eslint, babel, jest and sass.
 
 # Usage
 
